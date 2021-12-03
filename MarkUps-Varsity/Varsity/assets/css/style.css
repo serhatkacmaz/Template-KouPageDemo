@@ -496,7 +496,7 @@ img {
   width: 100%;
 }
 #mu-about-us .mu-about-us-area .mu-about-us-right a:after {
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(0, 0, 0, 0.4);
   bottom: 0;
   color: #ddd;
   content: '\f04b';
@@ -558,7 +558,7 @@ img {
  ABOUT US COUNTER SECTION
 ====================*/
 #mu-abtus-counter {
-  background-image: url("../img/counter-bg.jpg");
+  background-image: url("/img/faculty_banner.jpg");
   background-repeat: no-repeat;
   background-size: 100%;
   display: inline;
@@ -572,27 +572,28 @@ img {
   width: 100%;
 }
 #mu-abtus-counter .mu-abtus-counter-area .mu-abtus-counter-single {
-  border-right: 2px solid #888;
+  border-right: 2px solid rgb(255, 255, 255);
   display: inline;
   float: left;
   text-align: center;
   width: 100%;
 }
 #mu-abtus-counter .mu-abtus-counter-area .mu-abtus-counter-single span {
-  color: #fff;
+  color: #22CC20;
   display: inline-block;
   font-size: 50px;
 }
 #mu-abtus-counter .mu-abtus-counter-area .mu-abtus-counter-single h4 {
   color: #fff;
   font-size: 40px;
-  font-weight: bold;
+  font-weight: 600;
   margin-bottom: 5px;
   margin-top: 20px;
 }
 #mu-abtus-counter .mu-abtus-counter-area .mu-abtus-counter-single p {
   color: #fff;
   font-size: 18px;
+  font-weight: 500;
   text-transform: uppercase;
 }
 #mu-abtus-counter .mu-abtus-counter-area .no-border {
