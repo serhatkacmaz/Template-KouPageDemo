@@ -52,7 +52,12 @@
             text-align: center;
         }
         
-        img {
+        h4,
+        span {
+            font-weight: bold;
+        }
+        
+        .row img {
             width: 540px;
             height: 340px;
         }
@@ -109,6 +114,75 @@
             </div>
         </div>
     </header>
+
+    <!-- Start menu -->
+    <section id="mu-menu">
+        <nav class="navbar navbar-default" role="navigation">
+            <div class="container">
+                <div class="navbar-header">
+                    <!-- FOR MOBILE VIEW COLLAPSED BUTTON -->
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+                    <!-- LOGO -->
+                    <!-- TEXT BASED LOGO -->
+                    <!-- <a class="navbar-brand" href="index.html"><i class="fa fa-university"></i><span>Bilişim Sistemleri Mühendisliği</span></a> -->
+
+                    <!-- IMG BASED LOGO (a etiketine local CSS verdim. Öbür türlü resim altta kalıyor) -->
+                    <a class="navbar-brand" href="index.html" style="margin-bottom: 20%;"><img src="http://bilisim.kocaeli.edu.tr/assets/img/kou-simge-buyuk.png" alt="logo"></a>
+                </div>
+                <div id="navbar" class="navbar-collapse collapse">
+                    <!-- Style verdim logo ile aynı hizada durması için -->
+                    <ul id="top-menu" class="nav navbar-nav navbar-right main-nav" style="margin-top: 1%;">
+                        <!-- Home (Icon) -->
+                        <li class="active"><a href="index.html"><span class="fa fa-university"></span></a></li>
+                        <!-- Home (Icon) -->
+
+                        <!-- Bölümümüz Dropdown -->
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Bölümümüz <span class="fa fa-angle-down"></span></a>
+                            <ul class="dropdown-menu" role="menu">
+                                <li><a href="#">Kurumsal <span class="fa fa-angle-right"></span></a></li>
+                                <li><a href="personel.html">Personel <span class="fa fa-angle-right"></span></a></li>
+                            </ul>
+                        </li>
+                        <!-- Bölümümüz Dropdown -->
+
+                        <!-- Öğrenci Dropdown -->
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Öğrenci <span class="fa fa-angle-down"></span></a>
+                            <ul class="dropdown-menu" role="menu">
+                                <li><a href="#">Genel <span class="fa fa-angle-right"></span></a></li>
+                                <li><a href="#">Bilgi Sistemi <span class="fa fa-angle-right"></span> </a></li>
+                                <li><a href="#">Formlar <span class="fa fa-angle-right"></span></a></li>
+                                <li><a href="#">Lisans <span class="fa fa-angle-right"></span> </a></li>
+                                <li><a href="#">Lisans Üstü <span class="fa fa-angle-right"></span> </a></li>
+                                <li><a href="#">Öğrenci Programları <span class="fa fa-angle-right"></span> </a></li>
+                                <li><a href="#">Anketler <span class="fa fa-angle-right"></span> </a></li>
+                            </ul>
+                        </li>
+                        <!-- Öğrenci Dropdown -->
+
+                        <!-- ERASMUS+ Dropdown -->
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Erasmus+ <span class="fa fa-angle-down"></span></a>
+                            <ul class="dropdown-menu" role="menu">
+                                <li><a href="http://bilisim.kocaeli.edu.tr/dosyalar/en/StudyPlanBachelorDegree.pdf">Study Plan(Bachelor's Degree)</a></li>
+                                <li><a href="http://bilisim.kocaeli.edu.tr/dosyalar/en/StudyPlanMasterDegree.pdf">Study Plan(Master's Degree)</a></li>
+                                <li><a href="http://bilisim.kocaeli.edu.tr/dosyalar/en/StudyPlanDoctorateDegree.pdf">Study Plan(PHD Degree)</a></li>
+                            </ul>
+                        </li>
+                        <!-- ERASMUS+ Dropdown -->
+
+                    </ul>
+                </div>
+                <!--/.nav-collapse -->
+            </div>
+        </nav>
+    </section>
 
     <!-- Start our teacher -->
     <section id="mu-our-teacher">
