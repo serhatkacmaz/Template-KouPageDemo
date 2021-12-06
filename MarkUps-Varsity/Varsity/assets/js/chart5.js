@@ -1,5 +1,5 @@
 var xValues = ["Kitap (Basılı + Elektronik) Sayısı", "Dergi (Basılı + Elektronik) Sayısı", "Tez (Basılı + Elektronik) Sayısı"];
-var yValues = [405983, 58250, 2.804744]
+var yValues = [405983, 58250, 2.804]
 var barColors = [
     "#b91d47",
     "#00aba9",
