@@ -37,23 +37,24 @@
     <![endif]-->
 
     <style>
+        .chart {
+            text-align: center;
+            display: flex;
+            width: 100%;
+            justify-content: center;
+            margin-top: 50px;
+            margin-bottom: 50px;
+        }
+        
+        canvas {
+            width: 100%;
+            max-width: 40%;
+            text-align: center;
+        }
+        
         img {
-            width: 400px;
-            height: 500px;
-            border-radius: 15px;
-        }
-        
-        .mu-our-teacher-single {
-            margin: 70px;
-        }
-        
-        h4 {
-            font-weight: bold;
-            font-size: 14pt;
-        }
-        
-        span {
-            font-weight: bold;
+            width: 540px;
+            height: 340px;
         }
     </style>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
@@ -124,7 +125,7 @@
                         <!-- begain our teacher content -->
                         <div class="mu-our-teacher-content">
                             <div class="row">
-                                <div class="col-lg-12 col-md-6  col-sm-6">
+                                <div class="col-md-6">
                                     <div class="mu-our-teacher-single">
                                         <figure class="mu-our-teacher-img">
                                             <img src="http://bilisim.kocaeli.edu.tr/dosyalar/Dosyalar/APersonel/myildirim.png" alt="Prof. Dr. Mehmet YILDIRIM">
@@ -142,7 +143,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-lg-12 col-md-c6 ol-sm-6">
+                                <div class="col-md-6">
                                     <div class="mu-our-teacher-single">
                                         <figure class="mu-our-teacher-img">
                                             <img src="http://bilisim.kocaeli.edu.tr/dosyalar/Dosyalar/APersonel/halilyigit.jpg" alt="Doç. Dr. Halil YİĞİT">
@@ -158,7 +159,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-lg-12 col-md-c6 ol-sm-6">
+                                <div class="col-md-6">
                                     <div class="mu-our-teacher-single">
                                         <figure class="mu-our-teacher-img">
                                             <img src="http://bilisim.kocaeli.edu.tr/dosyalar/Dosyalar/APersonel/hikmethakangurel.jpg" alt="Doç. Dr. Hikmet Hakan GÜREL">
@@ -174,7 +175,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-lg-12 col-md-c6 ol-sm-6">
+                                <div class="col-md-6">
                                     <div class="mu-our-teacher-single">
                                         <figure class="mu-our-teacher-img">
                                             <img src="http://bilisim.kocaeli.edu.tr/dosyalar/Dosyalar/APersonel/adnansondas.jpg" alt="Dr. Öğr. Üyesi Adnan SONDAŞ">
@@ -192,75 +193,75 @@
                                 </div>
                             </div>
                             <!--  ############## 2. SATIR ############## -->
-                            <div class="row">
-                                <div class="col-lg-12 col-md-6 col-sm-6">
-                                    <div class="mu-our-teacher-single">
-                                        <figure class="mu-our-teacher-img">
-                                            <img src="http://bilisim.kocaeli.edu.tr/dosyalar/Dosyalar/APersonel/mustafaHoca.png" alt="Dr. Öğr. Üyesi M. Hikmet Bilgehan UÇAR">
-                                            <div class="mu-our-teacher-social">
-                                                <a href="mailto:mhbucar@kocaeli.edu.tr"><span class="fa fa-envelope"></span></a>
-                                                <a href="tel:+90 (262) 303 22 61"><span class="fa fa-phone"></span></a>
-                                            </div>
-                                        </figure>
-                                        <div class="mu-ourteacher-single-content">
-                                            <h4>M. Hİkmet Bİlgehan UÇAR</h4>
-                                            <span>Dr. Öğr. Üyesi</span>
-                                            <p>Sayısal Analog Haberleşme, Kablosuz Haberleşme, Elektromanyetik Alan ve Dalga Teorisi, Mikroşerit Anten, Filtre Tasarımı, Frekans Seçici Yüzeyler, Kullanıcı Arayüz Tasarımı, Bilgisayar Destekli Tasarım</p>
+
+                            <div class="col-md-6">
+                                <div class="mu-our-teacher-single">
+                                    <figure class="mu-our-teacher-img">
+                                        <img src="http://bilisim.kocaeli.edu.tr/dosyalar/Dosyalar/APersonel/mustafaHoca.png" alt="Dr. Öğr. Üyesi M. Hikmet Bilgehan UÇAR">
+                                        <div class="mu-our-teacher-social">
+                                            <a href="mailto:mhbucar@kocaeli.edu.tr"><span class="fa fa-envelope"></span></a>
+                                            <a href="tel:+90 (262) 303 22 61"><span class="fa fa-phone"></span></a>
                                         </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-12 col-md-c6 ol-sm-6">
-                                    <div class="mu-our-teacher-single">
-                                        <figure class="mu-our-teacher-img">
-                                            <img src="http://bilisim.kocaeli.edu.tr/dosyalar/Dosyalar/APersonel/serdarsolak.png" alt="Doç. Dr. Serdar SOLAK">
-                                            <div class="mu-our-teacher-social">
-                                                <a href="mailto:serdars@kocaeli.edu.tr"><span class="fa fa-envelope"></span></a>
-                                                <a href="tel:+90 (262) 303 22 69"><span class="fa fa-phone"></span></a>
-                                            </div>
-                                        </figure>
-                                        <div class="mu-ourteacher-single-content">
-                                            <h4>Serdar SOLAK</h4>
-                                            <span>Doç. Dr.</span>
-                                            <p>Gezgin Robotlar, Bilgisayarlı Görme, Görüntü İşleme, Veri Gizleme Teknikleri, Görüntü Steganografisi, Derin Öğrenme, Gömülü Sistemler, Açık Kaynak Kodlu Yazılımlar ve Uzaktan Eğitim</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-12 col-md-c6 ol-sm-6">
-                                    <div class="mu-our-teacher-single">
-                                        <figure class="mu-our-teacher-img">
-                                            <img src="http://bilisim.kocaeli.edu.tr/dosyalar/Dosyalar/APersonel/suleymaneken.jpg" alt="Doç. Dr. Süleyman Eken">
-                                            <div class="mu-our-teacher-social">
-                                                <a href="mailto:suleyman.eken@kocaeli.edu.tr"><span class="fa fa-envelope"></span></a>
-                                                <a href="tel:+90 (262) 303 22 32"><span class="fa fa-phone"></span></a>
-                                            </div>
-                                        </figure>
-                                        <div class="mu-ourteacher-single-content">
-                                            <h4>Süleyman Eken</h4>
-                                            <span>Doç. Dr.</span>
-                                            <p>Dağıtık sistemler, Büyük veri, Büyük Veri Matematiği ve Algoritmaları, Uzaktan Algılama, Veri Yoğun Hesaplama, Uzamsal Veri ve Veritabanları</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-12 col-md-c6 ol-sm-6">
-                                    <div class="mu-our-teacher-single">
-                                        <figure class="mu-our-teacher-img">
-                                            <img src="http://bilisim.kocaeli.edu.tr/dosyalar/Dosyalar/APersonel/zeynepkilimci.jpg" alt="Dr. Öğr. Üyesi Zeynep Hilal Kilimci">
-                                            <div class="mu-our-teacher-social">
-                                                <a href="mailto:zeynep.kilimci@kocaeli.edu.tr"><span class="fa fa-envelope"></span></a>
-                                                <a href="tel:+90 (262) 303 22 42"><span class="fa fa-phone"></span></a>
-                                            </div>
-                                        </figure>
-                                        <div class="mu-ourteacher-single-content">
-                                            <h4>Zeynep HİLAL KİLİMCİ</h4>
-                                            <span>Dr. Öğr. Üyesi</span>
-                                            <p>Duygu Analizi, Makine Öğrenmesi, Topluluk Öğrenmesi, Derin Öğrenme, Metin Madenciliği, Veri Madenciliği, Sezgisel Optimizasyon Teknikleri,Takviyeli/Pekiştirmeli Öğrenme</p>
-                                        </div>
+                                    </figure>
+                                    <div class="mu-ourteacher-single-content">
+                                        <h4>M. Hİkmet Bİlgehan UÇAR</h4>
+                                        <span>Dr. Öğr. Üyesi</span>
+                                        <p>Sayısal Analog Haberleşme, Kablosuz Haberleşme, Elektromanyetik Alan ve Dalga Teorisi, Mikroşerit Anten, Filtre Tasarımı, Frekans Seçici Yüzeyler, Kullanıcı Arayüz Tasarımı, Bilgisayar Destekli Tasarım</p>
                                     </div>
                                 </div>
                             </div>
+                            <div class="col-md-6">
+                                <div class="mu-our-teacher-single">
+                                    <figure class="mu-our-teacher-img">
+                                        <img src="http://bilisim.kocaeli.edu.tr/dosyalar/Dosyalar/APersonel/serdarsolak.png" alt="Doç. Dr. Serdar SOLAK">
+                                        <div class="mu-our-teacher-social">
+                                            <a href="mailto:serdars@kocaeli.edu.tr"><span class="fa fa-envelope"></span></a>
+                                            <a href="tel:+90 (262) 303 22 69"><span class="fa fa-phone"></span></a>
+                                        </div>
+                                    </figure>
+                                    <div class="mu-ourteacher-single-content">
+                                        <h4>Serdar SOLAK</h4>
+                                        <span>Doç. Dr.</span>
+                                        <p>Gezgin Robotlar, Bilgisayarlı Görme, Görüntü İşleme, Veri Gizleme Teknikleri, Görüntü Steganografisi, Derin Öğrenme, Gömülü Sistemler, Açık Kaynak Kodlu Yazılımlar ve Uzaktan Eğitim</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="mu-our-teacher-single">
+                                    <figure class="mu-our-teacher-img">
+                                        <img src="http://bilisim.kocaeli.edu.tr/dosyalar/Dosyalar/APersonel/suleymaneken.jpg" alt="Doç. Dr. Süleyman Eken">
+                                        <div class="mu-our-teacher-social">
+                                            <a href="mailto:suleyman.eken@kocaeli.edu.tr"><span class="fa fa-envelope"></span></a>
+                                            <a href="tel:+90 (262) 303 22 32"><span class="fa fa-phone"></span></a>
+                                        </div>
+                                    </figure>
+                                    <div class="mu-ourteacher-single-content">
+                                        <h4>Süleyman Eken</h4>
+                                        <span>Doç. Dr.</span>
+                                        <p>Dağıtık sistemler, Büyük veri, Büyük Veri Matematiği ve Algoritmaları, Uzaktan Algılama, Veri Yoğun Hesaplama, Uzamsal Veri ve Veritabanları</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="mu-our-teacher-single">
+                                    <figure class="mu-our-teacher-img">
+                                        <img src="http://bilisim.kocaeli.edu.tr/dosyalar/Dosyalar/APersonel/zeynepkilimci.jpg" alt="Dr. Öğr. Üyesi Zeynep Hilal Kilimci">
+                                        <div class="mu-our-teacher-social">
+                                            <a href="mailto:zeynep.kilimci@kocaeli.edu.tr"><span class="fa fa-envelope"></span></a>
+                                            <a href="tel:+90 (262) 303 22 42"><span class="fa fa-phone"></span></a>
+                                        </div>
+                                    </figure>
+                                    <div class="mu-ourteacher-single-content">
+                                        <h4>Zeynep HİLAL KİLİMCİ</h4>
+                                        <span>Dr. Öğr. Üyesi</span>
+                                        <p>Duygu Analizi, Makine Öğrenmesi, Topluluk Öğrenmesi, Derin Öğrenme, Metin Madenciliği, Veri Madenciliği, Sezgisel Optimizasyon Teknikleri,Takviyeli/Pekiştirmeli Öğrenme</p>
+                                    </div>
+                                </div>
+                            </div>
+
                             <!--  ############## 3. SATIR ############## -->
                             <div class="row">
-                                <div class="col-lg-12 col-md-6 col-sm-6">
+                                <div class="col-md-6">
                                     <div class="mu-our-teacher-single">
                                         <figure class="mu-our-teacher-img">
                                             <img src="http://bilisim.kocaeli.edu.tr/dosyalar/Dosyalar/APersonel/onder-yakut.jpg" alt="Dr. Öğr. Üyesi Önder Yakut">
@@ -276,7 +277,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-lg-12 col-md-c6 ol-sm-6">
+                                <div class="col-md-6">
                                     <div class="mu-our-teacher-single">
                                         <figure class="mu-our-teacher-img">
                                             <img src="http://bilisim.kocaeli.edu.tr/dosyalar/Dosyalar/APersonel/alpermetin.jpg" alt="Öğr. Gör. Alper Metin">
@@ -292,7 +293,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-lg-12 col-md-c6 ol-sm-6">
+                                <div class="col-md-6">
                                     <div class="mu-our-teacher-single">
                                         <figure class="mu-our-teacher-img">
                                             <img src="http://bilisim.kocaeli.edu.tr/dosyalar/Dosyalar/APersonel/yavuzselimfatihoglu4.jpg" alt="Öğr. Gör. Yavuz Selim Fatihoğlu">
@@ -308,7 +309,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-lg-12 col-md-c6 ol-sm-6">
+                                <div class="col-md-6">
                                     <div class="mu-our-teacher-single">
                                         <figure class="mu-our-teacher-img">
                                             <img src="http://bilisim.kocaeli.edu.tr/dosyalar/Dosyalar/APersonel/sumeyyailkin.png" alt="Arş. Gör. Sümeyya İLKİN">
@@ -327,10 +328,8 @@
                             </div>
                             <!--  ############## 4. SATIR ############## -->
                             <div class="row">
-                                <div class="col-lg-12 col-md-c6 ol-sm-6">
-                                    <!-- BOŞ DİV -->
-                                </div>
-                                <div class="col-lg-12 col-md-6 col-sm-6">
+
+                                <div class="col-md-6">
                                     <div class="mu-our-teacher-single">
                                         <figure class="mu-our-teacher-img">
                                             <img src="http://bilisim.kocaeli.edu.tr/dosyalar/Dosyalar/APersonel/sedabalta.png" alt="Arş. Gör. Seda BALTA KAÇ">
@@ -346,7 +345,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-lg-12 col-md-c6 ol-sm-6">
+                                <div class="col-md-6">
                                     <div class="mu-our-teacher-single">
                                         <figure class="mu-our-teacher-img">
                                             <img src="http://bilisim.kocaeli.edu.tr/dosyalar/Dosyalar/APersonel/zeynepsari.jpg" alt="Arş. Gör. Zeynep SARI">
