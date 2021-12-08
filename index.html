@@ -23,6 +23,7 @@
 
     <!-- Main style sheet -->
     <link href="MarkUps-Varsity/Varsity/assets/css/style.css" rel="stylesheet">
+    <link href="MarkUps-Varsity/Varsity/assets/css/duyurular.css" rel="stylesheet">
 
 
     <!-- Google Fonts -->
@@ -282,7 +283,7 @@
                             </div>
                             <div class="col-lg-6 col-md-6">
                                 <div class="mu-about-us-right">
-                                    <a id="mu-abtus-video" href="https://www.youtube.com/embed/HN3pm9qYAUs" target="mutube-video">
+                                    <a id="mu-abtus-video" href="https://www.youtube.com/watch?v=X9VjlCvR_lg" target="mutube-video">
                                         <img src="MarkUps-Varsity/Varsity/assets/img/about-us.jpg" alt="img">
                                     </a>
                                 </div>
@@ -346,6 +347,53 @@
     </section>
     <!-- End about us counter -->
 
+    <!-- popup duyuru -->
+    <div class="popup" id="popup-1">
+        <div class="overlay"></div>
+        <div class="content">
+            <div class="close-btn" onclick="duyuru1()">&times;</div>
+            <h1>Elektrik Elektronik Dersi alttan alan öğrenciler</h1>
+            <p>&ensp;&ensp;&ensp;Duyuru Yayınlanma Tarihi: 06/12/2021 Duyuru Bitiş Tarihi: 15/12/2021 Elektrik Elektronik Devreler dersini alttan alan öğrenciler için 13 Aralık 2021 pazartesi günü laboratuvar ders saatinde "laboratuvar sınavı" yapılacaktır.
+                Ekte yer alan 8 deney içinden rastgele bir seçim ile herhangi bir deneyi gerçekleştirmeniz beklenmektedir. Bu sebeple 8 deney için gerekli malzemeleri ve föyleri yanınızda bulundurmanız gerekmektedir. Deney föyleri ve malzemeleri yanında
+                olmayanlar laboratuvar sınavına alınmayacaklardır. Her deney bireysel gerçekleştirilecek olur, lab sınavına 12 şerli olarak girilecektir. Grup listesi ektedir ve öğrenciler, kendi grup saatlerinden bir saat önce gelmiş olmalıdırlar. Föy
+                dosyasının sonunda grup listeniz bulunmaktadır.</p>
+        </div>
+    </div>
+
+    <div class="popup" id="popup-2">
+        <div class="overlay"></div>
+        <div class="content">
+            <div class="close-btn" onclick="duyuru2()">&times;</div>
+            <h1>OEBSolutions İş İlanı</h1>
+            <p>&ensp;&ensp;&ensp;Duyuru Yayınlanma Tarihi: 22/11/2021 Duyuru Bitiş Tarihi: 20/01/2022 Oebsolutions, Kocaeli Üniversitesi Teknopark A.Ş. bünyesinde faaliyet gösteren bir yazılım şirketidir. Enerji ve online eğitim alanlarında geliştirmiş olduğu
+                Saas çözümleri bulunmaktadır. Bunun yanı sıra, veri ambarı tasarımı, iş zekası ve ETL konularında danışmanlık hizmeti sunmaktadır. Web tabanlı yazılım geliştirme, veri analizi, ve makine öğrenmesi alanlarında kendisini geliştirmek ve araştırma
+                geliştirme faaliyetlerinin bir parçası olmak isteyen öğrenciler "İşletmede Mesleki Eğitim" kapsamında info@oebsolutions.com adresine 20.01.2022 tarihine kadar, transkript belgesi ve özgeçmişleri ile birlikte başvurabilirler.</p>
+        </div>
+    </div>
+
+    <div class="popup" id="popup-3">
+        <div class="overlay"></div>
+        <div class="content">
+            <div class="close-btn" onclick="duyuru3()">&times;</div>
+            <h1>Kentkart Marmara Elektronik İş İlanı</h1>
+            <p>&ensp;&ensp;&ensp;Duyuru Yayınlanma Tarihi: 22/11/2021 Duyuru Bitiş Tarihi: 20/01/2022 Oebsolutions, Kocaeli Üniversitesi Teknopark A.Ş. bünyesinde faaliyet gösteren bir yazılım şirketidir. Enerji ve online eğitim alanlarında geliştirmiş olduğu
+                Saas çözümleri bulunmaktadır. Bunun yanı sıra, veri ambarı tasarımı, iş zekası ve ETL konularında danışmanlık hizmeti sunmaktadır. Web tabanlı yazılım geliştirme, veri analizi, ve makine öğrenmesi alanlarında kendisini geliştirmek ve araştırma
+                geliştirme faaliyetlerinin bir parçası olmak isteyen öğrenciler "İşletmede Mesleki Eğitim" kapsamında info@oebsolutions.com adresine 20.01.2022 tarihine kadar, transkript belgesi ve özgeçmişleri ile birlikte başvurabilirler.</p>
+        </div>
+    </div>
+
+    <div class="popup" id="popup-4">
+        <div class="overlay"></div>
+        <div class="content">
+            <div class="close-btn" onclick="duyuru4()">&times;</div>
+            <h1>BİMSER Çözüm İş Birliği</h1>
+            <p>&ensp;&ensp;&ensp;Duyuru Yayınlanma Tarihi: 17/09/2021 Duyuru Bitiş Tarihi: 17/01/2022 Ekonomik ve sosyal kalkınmaya katkı sağlamak hedefiyle; Fakültemiz ile BİMSER Academy arasında imzalanan protokol bilgileri ekteki linktedir.
+
+            </p>
+        </div>
+    </div>
+
+
     <!-- Start features section -->
     <section id="mu-features">
         <div class="container">
@@ -364,28 +412,28 @@
                                     <div class="mu-single-feature">
                                         <h4>Elektrik Elektronik Dersi alttan alan öğrenciler</h4>
                                         <p>06/12/2021 Arş. Gör. Zeynep SARI</p>
-                                        <a href="#">Detay</a>
+                                        <p onclick="duyuru1()">Detay</p>
                                     </div>
                                 </div>
                                 <div class="col-lg-4 col-md-4 col-sm-6">
                                     <div class="mu-single-feature">
                                         <h4>OEBSolutions İş İlanı</h4>
                                         <p>22/11/2021 Arş. Gör. Seda BALTA</p>
-                                        <a href="#">Detay</a>
+                                        <p onclick="duyuru2()">Detay</p>
                                     </div>
                                 </div>
                                 <div class="col-lg-4 col-md-4 col-sm-6">
                                     <div class="mu-single-feature">
                                         <h4>Kentkart Marmara Elektronik İş İlanı</h4>
                                         <p>16/11/2021 Genel Duyuru</p>
-                                        <a href="#">Detay</a>
+                                        <p onclick="duyuru3()">Detay</p>
                                     </div>
                                 </div>
                                 <div class="col-lg-4 col-md-4 col-sm-6">
                                     <div class="mu-single-feature">
                                         <h4>BİMSER Çözüm İş Birliği</h4>
                                         <p>17/09/2021 Genel Duyuru.</p>
-                                        <a href="#">Detay</a>
+                                        <p onclick="duyuru4()">Detay</p>
                                     </div>
                                 </div>
 
@@ -498,6 +546,7 @@
 
     <!-- Custom js -->
     <script src="MarkUps-Varsity/Varsity/assets/js/custom.js"></script>
+    <script src="MarkUps-Varsity/Varsity/assets/js/duyurular.js"></script>
 
 </body>
 

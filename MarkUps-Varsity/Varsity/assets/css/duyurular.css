@@ -1,0 +1,285 @@
+/* duyurular start*/
+
+.duyurular {
+    position: static;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 40px;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.altSatir {
+    flex-basis: 100%;
+    height: 0%;
+}
+
+.duyurular h4 {
+    margin: 8px;
+    font-size: 20px;
+}
+
+.duyurular .duyuru #timeline {
+    font-size: 16px;
+    letter-spacing: 0;
+    background-color: #8cc2d3;
+    border-radius: 4px;
+    padding: 5px;
+    margin: 5px;
+}
+
+.duyurular .duyuru {
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 10px;
+    width: 600px;
+    height: 120px;
+    margin: 5px;
+    box-shadow: 4px 2px 5px 2px #bbb;
+    justify-content: center;
+}
+
+.duyurular .duyuru:hover {
+    cursor: pointer;
+    border: 1px solid #0CB4E3;
+}
+
+.duyurular .tümduyuruLink {
+    padding: 20px;
+    font-size: 14px;
+    text-decoration: none;
+    color: #0CB4E3;
+}
+
+.duyurular .tümduyuruLink:hover {
+    color: #8cc2d3;
+}
+
+
+/* duyurular end */
+
+.duyurular .row button {
+    position: absolute;
+    display: block;
+    float: left;
+    right: 40px;
+    bottom: -20px;
+    border: none;
+    background-color: transparent;
+    font-weight: bold;
+}
+
+.duyurular .row button:hover,
+.duyurular .row a:hover {
+    color: #0CB4E3;
+    cursor: pointer;
+}
+
+.duyurular .row a {
+    position: absolute;
+    display: block;
+    font-size: 14px;
+    text-decoration: none;
+    color: #242021;
+    float: left;
+    right: 150px;
+    bottom: -20px;
+    font-weight: bold;
+}
+
+
+/* popup */
+
+
+/* https://www.youtube.com/watch?v=iE_6pQ3RlZU&t=249s */
+
+.popup .overlay {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 1;
+    display: none;
+}
+
+.popup .content {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    background: #fff;
+    width: 50%;
+    height: auto;
+    border-radius: 10px;
+    z-index: 1;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.popup .close-btn {
+    cursor: pointer;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    width: 30px;
+    background: rgb(245, 78, 78);
+    color: #fff;
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 30px;
+    text-align: center;
+    border-radius: 50%;
+}
+
+.content p {
+    text-align: justify;
+    /* padding: 40px; */
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding: 10px;
+}
+
+.popup.active .overlay {
+    display: block;
+}
+
+.popup.active .content {
+    transition: all 300ms ease-in-out;
+    transform: translate(-50%, -50%) scale(1);
+}
+
+
+/* popup end */
+
+
+/* popup duyuru ekle */
+
+.formDiv {
+    margin: 5%;
+    position: static;
+    width: 90%;
+}
+
+.formDiv .rowType1 {
+    display: flex;
+    gap: 20px;
+    flex-direction: row;
+}
+
+.inputDiv {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    width: 50%;
+}
+
+.formDiv .rowType2 .inputDiv {
+    width: 100%;
+}
+
+.inputDiv span {
+    /* color: #18b7ff; */
+    color: black;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-weight: 500;
+}
+
+.radioButton span {
+    color: black;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-weight: 500;
+}
+
+.radioButton {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+
+.inputDiv input {
+    padding: 10px;
+    font-size: 12pt;
+    outline: none;
+    height: 35px;
+    border: 1px solid #333;
+}
+
+.inputDiv textarea {
+    padding: 10px;
+    font-size: 12pt;
+    outline: none;
+    border: 1px solid #333;
+    resize: none;
+    height: 100px;
+    margin-bottom: 10px;
+}
+
+.inputDiv input[type="submit"] {
+    background-color: #0CB4E3;
+    color: #000;
+    font-size: 12pt;
+    border: none;
+    border-radius: 5px;
+    max-width: 120px;
+    font-weight: 500;
+    cursor: pointer;
+    text-align: center;
+    padding: 10px 15px;
+}
+
+.inputDiv input[type="submit"]:hover {
+    background-color: #8cc2d3;
+}
+
+.inputDiv ::placeholder {
+    transition-duration: 0.4s;
+    color: #999;
+}
+
+@media(max-width:990px) {
+    .formDiv .rowType1 {
+        display: flex;
+        gap: 0px;
+        flex-direction: column;
+    }
+}
+
+
+/* popup duyuru ekle end */
+
+.duyuru-ekle {
+    padding: 30px;
+    margin-left: 50%;
+    text-align: right;
+}
+
+h2 {
+    font-size: 24pt;
+}
+
+.formDiv span {
+    font-size: 14pt;
+}
+
+.duyuru-ekle-buton {
+    background-color: #8cc2d3;
+    color: #000;
+    font-size: 12pt;
+    border: none;
+    border-radius: 5px;
+    max-width: 120px;
+    font-weight: 500;
+    cursor: pointer;
+    padding: 10px 15px;
+}
