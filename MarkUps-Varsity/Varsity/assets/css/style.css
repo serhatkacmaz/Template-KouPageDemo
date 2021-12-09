@@ -2243,6 +2243,9 @@ img {
 /*==================
  FOOTER
 ====================*/
+.space {
+    margin: 50px 0;
+}
 
 #mu-footer {
     display: inline;
