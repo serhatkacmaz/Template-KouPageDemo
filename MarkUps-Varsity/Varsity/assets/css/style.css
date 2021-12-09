@@ -278,6 +278,25 @@ img {
     color: #fff;
 }
 
+#mu-menu .navbar-default .navbar-nav li .dropdown-menu ul.submenu {
+    border-radius: 0px;
+    position: absolute;
+    left: 100%;
+    width: 140px;
+    top: 0;
+    background-color: #FFF;
+    display: none;
+}
+
+#mu-menu .navbar-default .navbar-nav li .dropdown-menu ul.submenu li {
+    width: 100%;
+    border-bottom: 1px solid #000;
+}
+
+#mu-menu .navbar-default .navbar-nav li .dropdown-menu li:hover > ul.submenu {
+    display: block;
+}
+
 
 /* ALL SECTION */
 
