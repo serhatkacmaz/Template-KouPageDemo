@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>KOÜ - Teknoloji Fakültesi - Bilişim Sistemleri Mühendisliği | Anasayfa</title>
+    <title>Bilişim Sistemleri Mühendisliği | Yönetim</title>
 
     <!-- (KOÜ Web sitesinden )Favicon -->
     <link rel="shortcut icon" href="http://bilisim.kocaeli.edu.tr/assets/ico/favicon.ico" type="image/x-icon">
@@ -20,22 +20,14 @@
     <link rel="stylesheet" href="MarkUps-Varsity/Varsity/assets/css/jquery.fancybox.css" type="text/css" media="screen" />
     <!-- Theme color -->
     <link id="switcher" href="MarkUps-Varsity/Varsity/assets/css/theme-color/default-theme.css" rel="stylesheet">
-
     <!-- Main style sheet -->
     <link href="MarkUps-Varsity/Varsity/assets/css/style.css" rel="stylesheet">
-    <link href="MarkUps-Varsity/Varsity/assets/css/duyurular.css" rel="stylesheet">
 
 
     <!-- Google Fonts -->
     <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Roboto:400,400italic,300,300italic,500,700' rel='stylesheet' type='text/css'>
-
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
-    <style>
-        .pointer {
-            cursor: pointer;
-        }
-    </style>
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -43,9 +35,38 @@
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
+
+    <style>
+        .chart {
+            text-align: center;
+            display: flex;
+            width: 100%;
+            justify-content: center;
+            margin-top: 50px;
+            margin-bottom: 50px;
+        }
+        
+        canvas {
+            width: 100%;
+            max-width: 40%;
+            text-align: center;
+        }
+        
+        .mu-our-teacher-area h4,
+        .mu-our-teacher-area span {
+            font-weight: bold;
+        }
+        
+        .row img {
+            width: 540px;
+            height: 340px;
+        }
+    </style>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
 </head>
 
 <body>
+
 
     <!--START SCROLL TOP BUTTON -->
     <a class="scrollToTop" href="#">
@@ -98,7 +119,6 @@
         </div>
     </header>
     <!-- End header  -->
-
     <!-- Start menu -->
     <section id="mu-menu">
         <nav class="navbar navbar-default" role="navigation">
@@ -132,10 +152,10 @@
                             <ul class="dropdown-menu" role="menu">
                                 <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="">Kurumsal <span class="fa fa-angle-right"></span></a>
                                     <ul class="nav navbar-nav navbar-right main-nav submenu" style="margin-top: 1%;">
-                                        <li><a href="http://bilisim.kocaeli.edu.tr/baskanin-mesaji.php">Başkanın Mesajı</a></li>
+                                        <li><a href="baskan_mesaji.html">Başkanın Mesajı</a></li>
                                         <li><a href="hakkimizda.html">Hakkımızda</a></li>
                                         <li><a href="http://bilisim.kocaeli.edu.tr/misyon-vizyon.php">Misyon-Vizyon</a></li>
-                                        <li><a href="http://bilisim.kocaeli.edu.tr/yonetim.php">Yönetim</a></li>
+                                        <li><a href="yonetim.html">Yönetim</a></li>
                                         <li><a href="http://bilisim.kocaeli.edu.tr/program_cikti.php">Olanaklarımız</a></li>
                                         <li><a href="http://bilisim.kocaeli.edu.tr/anabilim_dallari.php">Anabilim Dalları</a></li>
                                         <li><a href="http://bilisim.kocaeli.edu.tr/anabilim_dallari.php">Öğretim Üyesi Projeleri </a></li>
@@ -253,99 +273,104 @@
         </nav>
     </section>
     <!-- End menu -->
-
-    <!-- Start service  -->
-    <!-- Slider'ın ortasındaki o bölgeyi sildim-->
-    <!-- End service  -->
-
-    <!-- Start about us -->
-    <section id="mu-about-us">
+    <!-- Start our teacher -->
+    <section id="mu-our-teacher">
         <div class="container">
             <div class="row">
-                <div class="col-md-12">
-                    <div class="mu-about-us-area">
-                        <div class="row">
-                            <div class="col-lg-6 col-md-6">
-                                <div class="mu-about-us-left">
-                                    <!-- Start Title -->
-                                    <div class="mu-title">
-                                        <h2>Hakkımızda</h2>
+                <div class="col-md-16">
+                    <div class="mu-our-teacher-area">
+                        <!-- begain title -->
+                        <div class="mu-title">
+                            <h2>YÖNETİM</h2>
+                        </div>
+                        <!-- end title -->
+                        <!-- begain our teacher content -->
+                        <div class="mu-our-teacher-content">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="mu-our-teacher-single">
+                                        <figure class="mu-our-teacher-img">
+                                            <img src="http://bilisim.kocaeli.edu.tr/dosyalar/Dosyalar/APersonel/halilyigit.jpg" alt="Doç. Dr. Halil YİĞİT">
+                                            <div class="mu-our-teacher-social">
+                                                <a href="mailto:halilyigit@kocaeli.edu.tr"><span class="fa fa-envelope"></span></a>
+                                                <a href="tel:+90 (262) 303 22 59"><span class="fa fa-phone"></span></a>
+                                            </div>
+                                        </figure>
+                                        <div class="mu-ourteacher-single-content">
+                                            <h4>Halil YİĞİT</h4>
+                                            <span>Doç. Dr. / Bölüm Başkanı</span>
+                                            <p style="text-align: center;">
+                                                <i class="fa fa-envelope"></i> &nbsp; halilyigit@kocaeli.edu.tr<br>
+                                                <i class="fa fa-phone"></i> &nbsp; +90 (262) 303 22 59
+                                            </p>
+                                        </div>
                                     </div>
-                                    <!-- End Title -->
-                                    <p style="text-align: justify;"> &ensp;&ensp;&ensp; Teknoloji Fakültesi 2012 yılında kuruldu, Bilişim Sistemleri Mühendisliği, Lisans ve Lisansüstü program ve öğrencilere sahiptir. Bölümümüz, bilişim teknolojilerinin etkin kullanımıyla araştırma odaklı,
-                                        yenilikçi ve uygulamaya yönelik bir eğitim-öğretim ve araştırma anlayışını benimsemektedir. Amaçlarımız doğrultusunda diğer üniversite içi ve dışından birimlerle karşılıklı faydalar gözetilerek ortak çalışmalar
-                                        yapmak misyonumuzun önemli bir parçasını oluşturmaktadır. <br><br>Amaçlarımızın gerçekleştirilmesinde, takım çalışması, karşılıklı saygı, dürüstlük ve işe bağlılık önemli unsurlardır. Bölüm olarak hedefimiz, ulusal olduğu
-                                        kadar dünya ölçeğinde, bilişim teknolojileri alanında eğitim-öğretim ve araştırma konularında saygı duyulan ve tanınan bir birim olmaktır. Akademik personelimiz, çalışmalarında öğrenci odaklı olup, kültürel olarak
-                                        kapsayıcı ve destekleyici bir öğrenim ortamında, örnek teşkil eden eğitim-öğretim ve pratik uygulamalara önem vermektedir. Öğrencilerimiz bir yarıyıl İşyeri Eğitimi yapmak zorundadırlar.
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="mu-our-teacher-single">
+                                        <figure class="mu-our-teacher-img">
+                                            <img src="http://bilisim.kocaeli.edu.tr/dosyalar/Dosyalar/APersonel/serdarsolak.png" alt="Doç. Dr. Serdar SOLAK">
+                                            <div class="mu-our-teacher-social">
+                                                <a href="mailto:serdars@kocaeli.edu.tr"><span class="fa fa-envelope"></span></a>
+                                                <a href="tel:+90 (262) 303 22 69"><span class="fa fa-phone"></span></a>
+                                            </div>
+                                        </figure>
+                                        <div class="mu-ourteacher-single-content">
+                                            <h4>Serdar SOLAK</h4>
+                                            <span>Doç. Dr. / Bölüm Başkan Yardımcısı</span>
+                                            <p style="text-align: center;">
+                                                <i class="fa fa-envelope"></i> &nbsp;  serdars@kocaeli.edu.tr<br>
+                                                <i class="fa fa-phone"></i> &nbsp; +90 (262) 303 22 69
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
 
-                                    </p>
+                            </div>
+                            <div class="space"></div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="mu-our-teacher-single">
+                                        <figure class="mu-our-teacher-img">
+                                            <img src="http://bilisim.kocaeli.edu.tr/dosyalar/Dosyalar/APersonel/suleymaneken.jpg" alt="Doç. Dr. Süleyman Eken">
+                                            <div class="mu-our-teacher-social">
+                                                <a href="mailto:suleyman.eken@kocaeli.edu.tr"><span class="fa fa-envelope"></span></a>
+                                                <a href="tel:+90 (262) 303 22 32"><span class="fa fa-phone"></span></a>
+                                            </div>
+                                        </figure>
+                                        <div class="mu-ourteacher-single-content">
+                                            <h4>Süleyman Eken</h4>
+                                            <span>Doç. Dr. / Bölüm Başkan Yardımcısı</span>
+                                            <p style="text-align: center;">
+                                                <i class="fa fa-envelope"></i> &nbsp; suleyman.eken@kocaeli.edu.tr<br>
+                                                <i class="fa fa-phone"></i> &nbsp; +90 (262) 303 22 32
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="mu-our-teacher-single">
+                                        <figure class="mu-our-teacher-img">
+                                            <img src="http://bilisim.kocaeli.edu.tr/dosyalar/Dosyalar/IPersonel/omerors.jpg" alt="Ömer ÖRS">
+                                        </figure>
+                                        <div class="mu-ourteacher-single-content">
+                                            <h4>Ömer ÖRS</h4>
+                                            <span>Bölüm Sekreteri</span>
+                                            <p style="text-align: center;">
+                                                <i class="fa fa-envelope"></i> &nbsp; bilisim@kocaeli.edu.tr<br>
+                                                <i class="fa fa-phone"></i> &nbsp; +90 (262) 303 22 56
+                                            </p>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="col-lg-6 col-md-6">
-                                <div class="mu-about-us-right">
-                                    <a id="mu-abtus-video" href="https://www.youtube.com/embed/l5abX99mz0A" target="mutube-video">
-                                        <img src="https://static.daktilo.com/sites/549/uploads/2020/02/07/111952-0.jpg" alt="img">
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
+                        <!-- End our teacher content -->
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <!-- End about us -->
-
-    <!-- Start about us counter -->
-    <section id="mu-abtus-counter">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="mu-abtus-counter-area">
-                        <div class="row">
-                            <!-- Start counter item -->
-                            <div class="col-lg-3 col-md-3 col-sm-3">
-                                <div class="mu-abtus-counter-single">
-                                    <span class="fa fa-book"></span>
-                                    <h4 class="counter">50</h4>
-                                    <p>DERS</p>
-                                </div>
-                            </div>
-                            <!-- End counter item -->
-                            <!-- Start counter item -->
-                            <div class="col-lg-3 col-md-3 col-sm-3">
-                                <div class="mu-abtus-counter-single">
-                                    <span class="fa fa-users"></span>
-                                    <h4 class="counter">452</h4>
-                                    <p>ÖĞRENCİ</p>
-                                </div>
-                            </div>
-                            <!-- End counter item -->
-                            <!-- Start counter item -->
-                            <div class="col-lg-3 col-md-3 col-sm-3">
-                                <div class="mu-abtus-counter-single">
-                                    <span class="fa fa-flask"></span>
-                                    <h4 class="counter">8</h4>
-                                    <p>LABORATUVAR</p>
-                                </div>
-                            </div>
-                            <!-- End counter item -->
-                            <!-- Start counter item -->
-                            <div class="col-lg-3 col-md-3 col-sm-3">
-                                <div class="mu-abtus-counter-single no-border">
-                                    <span class="fa fa-user-secret"></span>
-                                    <h4 class="counter">14</h4>
-                                    <p>AKADEMİSYEN</p>
-                                </div>
-                            </div>
-                            <!-- End counter item -->
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- End about us counter -->
+    <!-- End our teacher -->
 
     <!-- Start footer -->
     <footer id="mu-footer">
@@ -477,23 +502,22 @@
     <!-- End footer -->
 
     <!-- jQuery library -->
-    <script src="MarkUps-Varsity/Varsity/assets/js/jquery.min.js "></script>
+    <script src="MarkUps-Varsity/Varsity/assets/js/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="MarkUps-Varsity/Varsity/assets/js/bootstrap.js "></script>
+    <script src="MarkUps-Varsity/Varsity/assets/js/bootstrap.js"></script>
     <!-- Slick slider -->
-    <script type="text/javascript " src="MarkUps-Varsity/Varsity/assets/js/slick.js "></script>
+    <script type="text/javascript" src="MarkUps-Varsity/Varsity/assets/js/slick.js"></script>
     <!-- Counter -->
-    <script type="text/javascript " src="MarkUps-Varsity/Varsity/assets/js/waypoints.js "></script>
-    <script type="text/javascript " src="MarkUps-Varsity/Varsity/assets/js/jquery.counterup.js "></script>
+    <script type="text/javascript" src="MarkUps-Varsity/Varsity/assets/js/waypoints.js"></script>
+    <script type="text/javascript" src="MarkUps-Varsity/Varsity/assets/js/jquery.counterup.js"></script>
     <!-- Mixit slider -->
-    <script type="text/javascript " src="MarkUps-Varsity/Varsity/assets/js/jquery.mixitup.js "></script>
+    <script type="text/javascript" src="MarkUps-Varsity/Varsity/assets/js/jquery.mixitup.js"></script>
     <!-- Add fancyBox -->
-    <script type="text/javascript " src="MarkUps-Varsity/Varsity/assets/js/jquery.fancybox.pack.js "></script>
+    <script type="text/javascript" src="MarkUps-Varsity/Varsity/assets/js/jquery.fancybox.pack.js"></script>
 
 
     <!-- Custom js -->
-    <script src="MarkUps-Varsity/Varsity/assets/js/custom.js "></script>
-    <script src="MarkUps-Varsity/Varsity/assets/js/duyurular.js "></script>
+    <script src="MarkUps-Varsity/Varsity/assets/js/custom.js"></script>
 
 </body>
 
